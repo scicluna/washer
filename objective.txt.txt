@@ -1,0 +1,22 @@
+Scenario: Automated Car Wash System
+
+Imagine you are programming for an automated car wash system. There are multiple stages in the wash process: wetting the car, applying soap, scrubbing, rinsing, and drying. Your task is to ensure each stage operates in sequence when a car enters the system and a start button is pressed.
+
+Here are the specifications:
+
+A presence sensor detects when a car is in position and ready for washing. It sends a signal that can be read by the PLC. The signal is '1' when a car is present and '0' when no car is present.
+
+The start button starts the wash process. The system should not start if a car is not present.
+
+The stop button stops the entire process immediately for safety reasons.
+
+Each stage of the car wash should operate in the following sequence:
+
+Wetting: Activates water jets to wet the car.
+Soaping: Applies soap to the car.
+Scrubbing: Mechanical brushes scrub the car.
+Rinsing: Rinses the soap off the car.
+Drying: Blows hot air to dry the car.
+Each stage should last for a specific amount of time before moving to the next stage. You can use timers for this. Let's say each stage lasts for 10 seconds for simplicity.
+
+Try to create a ladder logic diagram to satisfy these conditions. Once you are comfortable with this, you can add more complexity like handling different wash types, adding an emergency stop, or handling errors.
